@@ -44,14 +44,14 @@ namespace
 /**
  * \brief Number of allowed missed messages, before a channel is assumed to be inactive.
  */
-constexpr unsigned int MISSED_MESSAGES_THRESHOLD{5};
+constexpr unsigned int MISSED_MESSAGES_THRESHOLD(10};
 
 /**
  * \brief Minimum accepted speed [deg/s or mm/s] for velocity commands.
  *
  * Intended for filtering away numerical errors.
  */
-constexpr double MIN_SPEED_THRESHOLD{0.5};
+constexpr double MIN_SPEED_THRESHOLD{0.1};
 }
 
 namespace abb
